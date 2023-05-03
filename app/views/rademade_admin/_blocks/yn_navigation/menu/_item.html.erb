@@ -16,7 +16,7 @@ end%>">
         %> with-dd<%
     end
     %>">
-    <span class="title"><%= menu_item[:name] %></span>
+    <span class="title"><%= menu_item[:name] %><% if menu_item[:count] && menu_item[:count] > 0 %><span class="nav-counter"><%= menu_item[:count] %></span><% end %></span>
   </a>
   <%
     if has_sub_items && (is_active || uri.nil?)
