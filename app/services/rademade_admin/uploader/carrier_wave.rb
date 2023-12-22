@@ -20,7 +20,7 @@ module RademadeAdmin
       end
 
       def extension_white_list
-        %w(jpg jpeg png gif)
+        %w(jpg jpeg png gif webp)
       end
 
     end
